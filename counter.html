@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Counter</title>
+    <!-- CDN Link Tailwind And DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+   
+<!-- CDN Link Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--Link Favicon  --> 
+<link rel="shortcut icon" href="./icon/favicon.png" type="image/x-icon">
+   <style>
+     .montserrat{
+  font-family: "Montserrat", serif;
+     }
+   </style>
+
+
+
+</head>
+<body class="montserrat">
+    <section class="flex justify-center items-center h-screen">
+        <div id="counter" class="card p-6 bg-blue-500 text-xl text-white">
+            <p>Count: <span id="count">0</span></p>
+            <div class="flex space-x-3">
+                    <button id="increase-btn">Increase [+]</button>
+                    <button id="decrease-btn">Decrease [-]</button>
+            </div>
+        </div>
+    </section>
+  
+    <script src="/js/counter.js"></script>
+</body>
+</html>
